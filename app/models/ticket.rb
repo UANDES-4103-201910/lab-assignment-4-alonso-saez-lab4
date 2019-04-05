@@ -12,7 +12,7 @@ class Ticket < ApplicationRecord
   end
 
   def no_ticket_could_be_bought_after_start_date
-    order_date = self.order.find(:created_at)
+    order_date = Order.created_at
     if self.created_at.present? && order_date < self.created_at
       errors.add(:order_date, 'The ticket cannot be bougth after the event start date')
     end

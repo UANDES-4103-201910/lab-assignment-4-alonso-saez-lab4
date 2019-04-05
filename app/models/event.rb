@@ -1,11 +1,12 @@
 class Event < ApplicationRecord
   belongs_to :event_venue
   has_many :ticket_types
+  validates :start_date, :presence => true
   validate :start_date_cannot_be_earlier_than_created_at
-  validate :two_events_at_the_same_event_venue, message: 'The event venue is taken at that time'
+  #validate :two_events_at_the_same_event_venue
 
   def start_date_cannot_be_earlier_than_created_at
-    if created_at.present? && self.start_date < created_at
+    if self.start_date < Date.today
       errors.add(:start_date, 'the event cant start in the past than the creation date')
 
     end

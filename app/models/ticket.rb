@@ -1,7 +1,7 @@
 class Ticket < ApplicationRecord
   belongs_to :ticket_type
   belongs_to :order
-  validate :start_date, :presence => true
+  validates :start_date, :presence => true
   before_save :ticket_cannot_be_created_after_the_start_date
   before_save :no_ticket_could_be_bought_after_start_date
 
@@ -13,7 +13,7 @@ class Ticket < ApplicationRecord
   end
 
   def no_ticket_could_be_bought_after_start_date
-    order_date = Order.created_at
+    order_date = Order.find(order_id: self).find(:created_at)
     if self.created_at.present? && order_date < self.created_at
       errors.add(:order_date, 'The ticket cannot be bougth after the event start date')
     end

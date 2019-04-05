@@ -220,3 +220,169 @@ Completed 200 OK in 18ms (Views: 4.5ms | ActiveRecord: 0.0ms)
   [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" LIMIT ?[0m  [["LIMIT", 11]]
   [1m[36mTicket Load (0.2ms)[0m  [1m[34mSELECT  "tickets".* FROM "tickets" LIMIT ?[0m  [["LIMIT", 11]]
   [1m[36mTicketType Load (0.2ms)[0m  [1m[34mSELECT  "ticket_types".* FROM "ticket_types" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (8.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "lastname", "email", "password", "address", "created_at", "updated_at", "phonenumber") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Juan"], ["lastname", "Perez"], ["email", "juanperez@miuandes.cl"], ["password", "juanito123"], ["address", "Universidad de los Andes"], ["created_at", "2019-04-04 23:35:36.213363"], ["updated_at", "2019-04-04 23:35:36.213363"], ["phonenumber", 12345678]]
+  [1m[35m (7.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mUser Destroy (9.0ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (1.0ms)[0m  [1m[32mINSERT INTO "users" ("name", "lastname", "email", "password", "address", "created_at", "updated_at", "phonenumber") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Juan"], ["lastname", "Perez"], ["email", "juanperez@miuandes.cl"], ["password", "juanito123"], ["address", "Universidad de los Andes"], ["created_at", "2019-04-04 23:37:26.086505"], ["updated_at", "2019-04-04 23:37:26.086505"], ["phonenumber", 12345678]]
+  [1m[35m (16.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Destroy (16.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 4]]
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (1.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "lastname", "email", "password", "address", "created_at", "updated_at", "phonenumber") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Juan"], ["lastname", "Perez"], ["email", "juanperez@miuandes.cl"], ["password", "juanito123"], ["address", "Universidad de los Andes"], ["created_at", "2019-04-04 23:39:47.698957"], ["updated_at", "2019-04-04 23:39:47.698957"], ["phonenumber", 12345678]]
+  [1m[35m (23.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Destroy (18.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 5]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (1.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "lastname", "email", "password", "address", "created_at", "updated_at", "phonenumber") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Juan"], ["lastname", "Perez"], ["email", "juanperez@miuandes.cl"], ["password", "juanito123"], ["address", "Universidad de los Andes"], ["created_at", "2019-04-04 23:45:18.330434"], ["updated_at", "2019-04-04 23:45:18.330434"], ["phonenumber", 12345678]]
+  [1m[35m (14.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mUser Destroy (16.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 6]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (1.0ms)[0m  [1m[32mINSERT INTO "users" ("name", "lastname", "email", "password", "address", "created_at", "updated_at", "phonenumber") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Juan"], ["lastname", "Perez"], ["email", "juanperez@miuandes.cl"], ["password", "juanito123"], ["address", "Universidad de los Andes"], ["created_at", "2019-04-04 23:48:45.839660"], ["updated_at", "2019-04-04 23:48:45.839660"], ["phonenumber", 12345678]]
+  [1m[35m (14.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Destroy (17.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 7]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (1.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "lastname", "email", "password", "address", "created_at", "updated_at", "phonenumber") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Juan"], ["lastname", "Perez"], ["email", "juanperez@miuandes.cl"], ["password", "juanito123"], ["address", "Universidad de los Andes"], ["created_at", "2019-04-04 23:51:01.195327"], ["updated_at", "2019-04-04 23:51:01.195327"], ["phonenumber", 12345678]]
+  [1m[35m (17.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Destroy (17.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 8]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (1.0ms)[0m  [1m[32mINSERT INTO "users" ("name", "lastname", "email", "password", "address", "created_at", "updated_at", "phonenumber") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Juan"], ["lastname", "Perez"], ["email", "juanperez@miuandes.cl"], ["password", "juanito123"], ["address", "Universidad de los Andes"], ["created_at", "2019-04-04 23:52:07.119986"], ["updated_at", "2019-04-04 23:52:07.119986"], ["phonenumber", 12345678]]
+  [1m[35m (17.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Destroy (16.9ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 9]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (1.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "lastname", "email", "password", "address", "created_at", "updated_at", "phonenumber") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Juan"], ["lastname", "Perez"], ["email", "juanperez@miuandes.cl"], ["password", "juanito123"], ["address", "Universidad de los Andes"], ["created_at", "2019-04-04 23:57:00.894626"], ["updated_at", "2019-04-04 23:57:00.894626"], ["phonenumber", 12345678]]
+  [1m[35m (16.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Destroy (16.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 10]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (1.0ms)[0m  [1m[32mINSERT INTO "users" ("name", "lastname", "email", "password", "address", "created_at", "updated_at", "phonenumber") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Juan"], ["lastname", "Perez"], ["email", "juanperez@miuandes.cl"], ["password", "juanito123"], ["address", "Universidad de los Andes"], ["created_at", "2019-04-05 00:06:36.092901"], ["updated_at", "2019-04-05 00:06:36.092901"], ["phonenumber", 12345678]]
+  [1m[35m (14.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mUser Destroy (15.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 11]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "lastname", "email", "password", "address", "created_at", "updated_at", "phonenumber") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Juan"], ["lastname", "Perez"], ["email", "juanperez@miuandes.cl"], ["password", "juanito123"], ["address", "Universidad de los Andes"], ["created_at", "2019-04-05 00:13:37.134157"], ["updated_at", "2019-04-05 00:13:37.134157"], ["phonenumber", 12345678]]
+  [1m[35m (14.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mUser Destroy (18.0ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 12]]
+  [1m[36mEventVenue Load (0.3ms)[0m  [1m[34mSELECT  "event_venues".* FROM "event_venues" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mEventVenue Create (1.7ms)[0m  [1m[32mINSERT INTO "event_venues" ("name", "address", "capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Mall Parque Arauco, Santiago"], ["address", "Kenedy"], ["capacity", 5], ["created_at", "2019-04-05 00:20:12.898630"], ["updated_at", "2019-04-05 00:20:12.898630"]]
+  [1m[35m (12.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mEventVenue Destroy (16.7ms)[0m  [1m[31mDELETE FROM "event_venues" WHERE "event_venues"."id" = ?[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mEventVenue Create (1.5ms)[0m  [1m[32mINSERT INTO "event_venues" ("name", "address", "capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Mall Parque Arauco, Santiago"], ["address", "Kenedy"], ["capacity", 5], ["created_at", "2019-04-05 00:21:08.053920"], ["updated_at", "2019-04-05 00:21:08.053920"]]
+  [1m[35m (7.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mEventVenue Destroy (16.0ms)[0m  [1m[31mDELETE FROM "event_venues" WHERE "event_venues"."id" = ?[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mEventVenue Create (0.3ms)[0m  [1m[32mINSERT INTO "event_venues" ("name", "address", "capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Mall Parque Arauco, Santiago"], ["address", "Kenedy"], ["capacity", 2], ["created_at", "2019-04-05 00:21:25.001225"], ["updated_at", "2019-04-05 00:21:25.001225"]]
+  [1m[35m (15.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mEventVenue Destroy (17.0ms)[0m  [1m[31mDELETE FROM "event_venues" WHERE "event_venues"."id" = ?[0m  [["id", 4]]
+  [1m[36mEventVenue Load (1.0ms)[0m  [1m[34mSELECT  "event_venues".* FROM "event_venues" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mEventVenue Load (0.8ms)[0m  [1m[34mSELECT  "event_venues".* FROM "event_venues" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mEventVenue Load (1.0ms)[0m  [1m[34mSELECT  "event_venues".* FROM "event_venues" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (1.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "lastname", "email", "password", "address", "created_at", "updated_at", "phonenumber") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Juan"], ["lastname", "Perez"], ["email", "juanperez@miuandes.cl"], ["password", "juanito123"], ["address", "Universidad de los Andes"], ["created_at", "2019-04-05 00:35:06.816939"], ["updated_at", "2019-04-05 00:35:06.816939"], ["phonenumber", 123456789]]
+  [1m[35m (16.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Destroy (16.9ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 13]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "lastname", "email", "password", "address", "created_at", "updated_at", "phonenumber") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Juan"], ["lastname", "Perez"], ["email", "juanperez@miuandes.cl"], ["password", "juanito123"], ["address", "Universidad de los Andes"], ["created_at", "2019-04-05 00:39:01.583602"], ["updated_at", "2019-04-05 00:39:01.583602"], ["phonenumber", 123456789012]]
+  [1m[35m (16.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTicket Load (0.2ms)[0m  [1m[34mSELECT  "tickets".* FROM "tickets" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mTicket Load (0.2ms)[0m  [1m[34mSELECT  "tickets".* FROM "tickets" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mTicketType Load (0.3ms)[0m  [1m[34mSELECT  "ticket_types".* FROM "ticket_types" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mOrder Create (4.8ms)[0m  [1m[32mINSERT INTO "orders" ("user_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["user_id", 1], ["created_at", "2019-04-05 00:51:27.911411"], ["updated_at", "2019-04-05 00:51:27.911411"]]
+  [1m[35m (13.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT  "events".* FROM "events" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mEventVenue Load (0.3ms)[0m  [1m[34mSELECT  "event_venues".* FROM "event_venues" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mEventVenue Load (0.2ms)[0m  [1m[34mSELECT  "event_venues".* FROM "event_venues" WHERE "event_venues"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Create (1.0ms)[0m  [1m[32mINSERT INTO "events" ("name", "description", "start_date", "event_venue_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Clase de web aplications"], ["description", "Clase que permite desarrollar paginas web"], ["start_date", "2019-04-07"], ["event_venue_id", 1], ["created_at", "2019-04-05 00:58:28.297507"], ["updated_at", "2019-04-05 00:58:28.297507"]]
+  [1m[35m (17.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mTicket Load (0.1ms)[0m  [1m[34mSELECT  "tickets".* FROM "tickets" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mEventVenue Load (0.1ms)[0m  [1m[34mSELECT  "event_venues".* FROM "event_venues" WHERE "event_venues"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Create (1.0ms)[0m  [1m[32mINSERT INTO "events" ("name", "description", "start_date", "event_venue_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Clase de logistica"], ["description", "Clase que permite ubicar instalaciones"], ["start_date", "2019-04-01"], ["event_venue_id", 1], ["created_at", "2019-04-05 01:01:12.816703"], ["updated_at", "2019-04-05 01:01:12.816703"]]
+  [1m[35m (18.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mEvent Destroy (17.0ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = ?[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mEventVenue Load (0.3ms)[0m  [1m[34mSELECT  "event_venues".* FROM "event_venues" WHERE "event_venues"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Create (1.2ms)[0m  [1m[32mINSERT INTO "events" ("name", "description", "start_date", "event_venue_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Clase de logistica"], ["description", "Clase que permite ubicar instalaciones"], ["start_date", "2018-04-01"], ["event_venue_id", 1], ["created_at", "2019-04-05 01:02:45.800314"], ["updated_at", "2019-04-05 01:02:45.800314"]]
+  [1m[35m (17.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mEvent Destroy (11.8ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = ?[0m  [["id", 3]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mEventVenue Load (0.1ms)[0m  [1m[34mSELECT  "event_venues".* FROM "event_venues" WHERE "event_venues"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Create (1.1ms)[0m  [1m[32mINSERT INTO "events" ("name", "description", "start_date", "event_venue_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Clase de logistica"], ["description", "Clase que permite ubicar instalaciones"], ["start_date", "2018-04-01"], ["event_venue_id", 1], ["created_at", "2019-04-05 01:03:53.123140"], ["updated_at", "2019-04-05 01:03:53.123140"]]
+  [1m[35m (16.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mEvent Destroy (16.7ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = ?[0m  [["id", 4]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mEventVenue Load (0.1ms)[0m  [1m[34mSELECT  "event_venues".* FROM "event_venues" WHERE "event_venues"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Create (1.0ms)[0m  [1m[32mINSERT INTO "events" ("name", "description", "start_date", "event_venue_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Clase de logistica"], ["description", "Clase que permite ubicar instalaciones"], ["start_date", "2019-04-07"], ["event_venue_id", 1], ["created_at", "2019-04-05 01:07:06.853002"], ["updated_at", "2019-04-05 01:07:06.853002"]]
+  [1m[35m (16.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mEvent Destroy (17.6ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = ?[0m  [["id", 5]]

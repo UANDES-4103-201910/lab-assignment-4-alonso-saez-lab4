@@ -5,7 +5,7 @@ class Event < ApplicationRecord
   validate :two_events_at_the_same_event_venue, message: 'The event venue is taken at that time'
 
   def start_date_cannot_be_earlier_than_created_at
-    if self.created_at.present? && self.start_date < self.created_at
+    if created_at.present? && self.start_date < created_at
       errors.add(:start_date, 'the event cant start in the past than the creation date')
 
     end

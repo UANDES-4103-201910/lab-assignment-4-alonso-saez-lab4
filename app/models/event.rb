@@ -3,7 +3,7 @@ class Event < ApplicationRecord
   has_many :ticket_types
   validates :start_date, :presence => true
   validate :start_date_cannot_be_earlier_than_created_at
-  #validate :two_events_at_the_same_event_venue
+  validate :two_events_at_the_same_event_venue
 
   def start_date_cannot_be_earlier_than_created_at
     if self.start_date < Date.today
@@ -13,12 +13,11 @@ class Event < ApplicationRecord
   end
 
   def two_events_at_the_same_event_venue
-    sd = self.start_date
-    evi = self.event_venue_id
-    count_of_events = Event,where("start_date = :start_date AND event_venue_id = :event_venue_id", {:start_date => sd, :event_venue_id => evi}).count
-    if count_of_events > 0
-      errors.add(:events, 'the event cannot be on the same event venue at the same time with other event')
-    end
+    list_of_events = Event.all
+    list_of_events.each {|e|
+      if e.start_date == self.start_date && e.event_venue_id == self.event_venue_id
+        errors.add(:event_venue_id, 'the event cannot be on the same event venue at the same time with other event')
+      end}
   end
 
 end

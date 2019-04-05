@@ -525,3 +525,26 @@ Completed 200 OK in 18ms (Views: 4.5ms | ActiveRecord: 0.0ms)
   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
   [1m[36mEventVenue Load (0.2ms)[0m  [1m[34mSELECT  "event_venues".* FROM "event_venues" WHERE "event_venues"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
   [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT  "events".* FROM "events" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mEventVenue Load (0.2ms)[0m  [1m[34mSELECT  "event_venues".* FROM "event_venues" WHERE "event_venues"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Create (1.6ms)[0m  [1m[32mINSERT INTO "events" ("name", "description", "start_date", "event_venue_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Clase de logistica"], ["description", "clase para aprender logistica"], ["start_date", "2019-04-05"], ["event_venue_id", 1], ["created_at", "2019-04-05 02:35:15.582669"], ["updated_at", "2019-04-05 02:35:15.582669"]]
+  [1m[35m (14.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mEvent Destroy (18.2ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = ?[0m  [["id", 9]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mEventVenue Load (0.2ms)[0m  [1m[34mSELECT  "event_venues".* FROM "event_venues" WHERE "event_venues"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  [1m[36mEvent Create (0.8ms)[0m  [1m[32mINSERT INTO "events" ("name", "description", "start_date", "event_venue_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Clase de logistica"], ["description", "clase para aprender logistica"], ["start_date", "2019-04-05"], ["event_venue_id", 1], ["created_at", "2019-04-05 02:44:13.337525"], ["updated_at", "2019-04-05 02:44:13.337525"]]
+  [1m[35m (6.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT  "events".* FROM "events" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mEvent Destroy (15.4ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = ?[0m  [["id", 10]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mEventVenue Load (0.2ms)[0m  [1m[34mSELECT  "event_venues".* FROM "event_venues" WHERE "event_venues"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  [1m[36mEvent Create (1.1ms)[0m  [1m[32mINSERT INTO "events" ("name", "description", "start_date", "event_venue_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Clase de logistica"], ["description", "clase para aprender logistica"], ["start_date", "2019-04-05"], ["event_venue_id", 1], ["created_at", "2019-04-05 02:45:43.355878"], ["updated_at", "2019-04-05 02:45:43.355878"]]
+  [1m[35m (11.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mEventVenue Load (0.1ms)[0m  [1m[34mSELECT  "event_venues".* FROM "event_venues" WHERE "event_venues"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mEvent Destroy (15.3ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = ?[0m  [["id", 11]]
